@@ -1,4 +1,3 @@
-
 /* colores::
 color: #898121 ;
 color: #CECE5A;
@@ -22,14 +21,14 @@ font-family: 'Kotta One', serif;
 body {
     font-family: "Edu SA Beginner", cursive;
     background-color: rgb(243, 224, 199);
-    
+
 }
 
 /*----header-------------*/
 header {
     display: flex;
     background-color: rgba(206, 206, 90, 0.74);
-    
+
 }
 
 .navbar {
@@ -41,19 +40,19 @@ header {
     width: 100%;
     height: 7rem;
     margin: 8px 6px 8px 6px;
-    
+
 }
 
 .items {
-    justify-self:flex-end;
+    justify-self: flex-end;
     align-self: self-start;
 }
 
 .items li {
-    
+
     list-style: none;
     text-align: left;
-    padding-right: 18rem;
+    padding-right: 5rem;
 }
 
 .items ul li a {
@@ -64,16 +63,16 @@ header {
     font-size: 1rem;
 }
 
-.navbar img{
-    justify-self:flex-end;
-    align-self:flex-end;
+.navbar img {
+    justify-self: flex-end;
+    align-self: flex-end;
     padding-right: 2rem;
-    padding-left: 10rem;
+    padding-left: 5rem;
 }
 
-.buscador{
-    justify-self:flex-end;
-    align-self:flex-end;
+.buscador {
+    justify-self: flex-end;
+    align-self: flex-end;
     padding-right: 2rem;
 }
 
@@ -165,7 +164,7 @@ h2 {
     font-size: 2.5rem;
 }
 
-.sectionIndexPrincipal { 
+.sectionIndexPrincipal {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -180,17 +179,18 @@ h2 {
     background-size: cover;
     background-position: center;
 }
-.sectionIndexPrincipal button {
-        padding: .5rem;
-        text-align: center;
-        border-radius: 1rem;
-        background-color: rgb(240, 240, 160);
-        border: none;
-        justify-self: center;
-        align-self: center;
-    }
 
-    .sectionIndexPrincipal button  a {
+.sectionIndexPrincipal button {
+    padding: .5rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: rgb(240, 240, 160);
+    border: none;
+    justify-self: center;
+    align-self: center;
+}
+
+.sectionIndexPrincipal button a {
     font-family: "Edu SA Beginner", cursive;
     text-decoration: none;
     color: #c51605;
@@ -223,230 +223,307 @@ h2 {
     box-shadow: #8d731fa4;
     margin: 16px 10px 4px 16px;
 }
+
 /*-----media-query----inicio*----*/
 
-@media(max-width: 1170px){
-    .mi-cuenta{
+@media(max-width: 1170px) {
+    .mi-cuenta {
         display: none;
     }
 }
-    
+
 
 @media(max-width: 1024px) {
-    
-    .navbar{
+
+
+    .navbar {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        height: 6.875rem;
+        width: 100%;
+        height: auto;
     }
+
     .navbar img {
         padding-right: 4rem;
-        height: 100%;
-        width:100%;
-    } 
-    .items ul {
-        justify-self:left;
-        align-self:flex-end;
-        text-align: left;
-        
+
     }
-    
-    .buscador{  
+
+    .items ul {
+        justify-self: left;
+        align-self: flex-end;
+        text-align: left;
+
+    }
+
+    .buscador {
         display: none;
     }
+
     .direccion {
         justify-content: space-around;
         align-items: flex-end;
     }
-    
-    
-}
-@media (max-width: 990px){
 
-.direccion{
-        width:13.75rem;
+
+}
+
+@media (max-width: 990px) {
+
+    .direccion {
+        width: 13.75rem;
         height: 5rem;
         justify-content: center;
 
     }
-.direccion p{
-        
+
+    .direccion p {
+
         font-size: .75rem;
         justify-self: flex-end;
         align-self: self-start;
     }
-    
-    .redes ul{
+
+    .redes ul {
         align-items: start;
     }
-    .redes il{
+
+    .redes il {
         align-items: flex-start;
     }
-    
-    .redes ul img{
+
+    .redes ul img {
         width: 1.875rem;
         height: fit-content;
         justify-content: center;
         align-content: center;
     }
-    .redes li{
+
+    .redes li {
         font: size .75rem;
-    } 
+    }
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    footer{
+    footer {
         width: 100%;
-        justify-content:space-around;
+        height: 400px;
+        flex-direction: column;
+        justify-content: space-around;
         align-content: center;
         align-items: center;
+        padding-bottom: 3rem;
     }
-    .items {
+
+    .navbar {
         display: flex;
-        justify-items:center;
-        padding-right: 0% ;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        height: auto;
     }
-    
-    .direccion{
-        width:7.5rem;
+
+    .navbar img {
+        padding-right: 2rem;
+    }
+
+    .items {
+        padding-left: 2rem;
+    }
+
+    .items ul {
+        justify-self: center;
+        align-self: flex-end;
+        text-align: left;
+
+    }
+
+    .buscador {
+        display: none;
+    }
+
+    .direccion {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 3rem;
+    }
+
+    .direccion {
+        width: 7.5rem;
         height: 6.25rem;
-        justify-content:flex-end;
-
-
+        justify-content: flex-end;
     }
-    .direccion p{
-        
+
+    .direccion p {
         font-size: .75rem;
         justify-self: flex-end;
-        
         align-self: self-end;
     }
-    .tarjetas{
-        display:none;
+
+    .tarjetas {
+        display: none;
     }
-    
-    .redes ul{
-        align-items:flex-end;
+
+    .redes ul {
+        flex-direction: column;
+        align-items: flex-end;
     }
-    .redes il{
+
+    .redes il {
         align-items: flex-start;
     }
-    
-    .redes ul img{
+
+    .redes ul img {
         width: 1.875rem;
         height: fit-content;
-            
+
     }
-    .redes li{
+
+    .redes li {
         font: size .75rem;
-    } 
-    
-h1{
-    font-size: 2rem;
-    padding:1rem 1rem;
-}
-h2{
-    font-size:1.25rem;
-}
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 1rem 1rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
 }
 
 @media(max-width: 560) {
 
-    .navbar{
+    .navbar {
         max-width: 35rem;
     }
-    .items{
-        
+
+    .items {
         width: 18.75rem;
-}
-.items {
-    display: flex;
-}
+        padding-left: 3rem;
+    }
 
-.navbar img{
+    .navbar img {
 
-    width: 6.25rem;
-}
+        width: 6.25rem;
+    }
 
-    .direccion p {
+    .direccion {
         display: none;
     }
+
     .tarjetas img {
         display: none;
     }
 
 }
 
-@media(max-width: 480){
-    .navbar{
+@media(max-width: 480) {
+    .navbar {
         display: flex;
-        width:30rem;
-        
+        width: 30rem;
+
     }
+
     .items {
-        display:flex;
+        display: flex;
         width: 18.75rem;
-        height:6.5rem;
+        height: 6.5rem;
         justify-content: center;
         align-content: center;
         align-items: center;
-        
-    }
-    .items ul{
-        display: flex;
-        width: 15.625rem ;
-        height:6.5rem;
-        
-    }
-    .items li{
-        display: flex;
-        padding-right: 0px;
-    }
-    .items li a{
-        font-size: 12px;
-    }
-    .navbar img{
-        width: 6.25rem;
-        height:6.5rem;
-        padding:0%;
-        }
-    footer{
-        width:100%;
-        height: 100px;
-    }
-    
+        padding-left: 3rem;
+
     }
 
-@media (max-width:320px){
-    header{
+    .items ul {
+        display: flex;
+        width: 15.625rem;
+        height: 6.5rem;
+
+    }
+
+    .items li {
+        display: flex;
+        padding-right: 0.25rem;
+    }
+
+    .items li a {
+        font-size: 12px;
+    }
+
+    .navbar img {
+        width: 6.25rem;
+        height: 6.5rem;
+        padding: 0%;
+    }
+
+    .sectionIndexSecundaria {
+        width: 100%;
+        height: 18.75rem;
+    }
+
+    .sectionIndexSecundaria video {
         width:100%;
+        height: 15rem;
+        padding: .25rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100px;
+    }
+    .redes ul {
+        height: fit-content;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .redes ul {
+        gap: .25rem;
+
+    }
+
+}
+
+@media (max-width:320px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         height: 120px;
-        display: block;
-    } 
-    .items ul{
-        height:40px;
+        justify-content: center;
+        }
+
+    .items ul {
+        display: inline;
+        flex-direction: row;
+        height: 40px;
         width: 100px;
         padding-right: 0%;
     }
-    .items li{
+
+    .items li {
         text-align: center;
-        text-justify:inter-word;
-        
     }
-    .items ul li a{
+
+    .items ul li a {
         font-size: 12px;
     }
-    .navbar img{
-        height:40px;
-        width: 100px;
+
+    .navbar img {
+        height: 80px;
+        width: 80px;
         padding-right: 0%;
         padding-left: 0%;
     }
-    }
-    
+}
+
 
 
 /*----------fin de inicio----------*/
@@ -521,55 +598,59 @@ h2{
 .grid {
     display: grid;
     width: 100%;
-    height:75rem;
-    grid-template-columns:25% 25% 25% 25%;
+    height: 75rem;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "h1 h1 h1 h1"
         "formulario formulario formulario formulario"
         "h2 h2 h2 h2"
         "otrasvias otrasvias otrasvias otrasvias";
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     background-image: url("../assets/img/fondos/background-sale.jpg");
     height: 50rem;
     background-repeat: no-repeat;
     background-position: 400%;
     background-size: cover;
-    
+
 }
-h1{
+
+h1 {
     grid-area: h1;
     justify-self: center;
 
 }
-.formulario{
+
+.formulario {
     grid-area: formulario;
     justify-self: flex-start;
-    
+
 }
 
-h2{
+h2 {
     grid-area: h2;
     justify-self: center;
 
 }
+
 .otrasvias {
     grid-area: otrasvias;
     display: flex;
-    justify-self:flex-start;
+    justify-self: flex-start;
     align-self: center;
-    padding-left: .5rem; 
-    gap:1rem;
+    padding-left: .5rem;
+    gap: 1rem;
 
 }
+
 .otrasvias li {
     list-style: none;
     align-self: center;
 
 }
 
-.otrasvias li a{
+.otrasvias li a {
     font-family: "Edu SA Beginner", cursive;
     font-size: 1.25rem;
     text-decoration: none;
@@ -640,25 +721,25 @@ form fieldset label {
     text-align: center;
 }
 
-.cards button{
-        padding: .5rem;
-        text-align: center;
-        border-radius: 1rem;
-        background-color: rgb(240, 240, 160);
-        border: none;
-        justify-self: center;
-        align-self: center;
-        }
-    
-    .cards button a {
-        font-family: "Edu SA Beginner", cursive;
-        text-decoration: none;
-        color: #c51605;
-        text-align: center;
-        font-size: 1.25rem;
-        
+.cards button {
+    padding: .5rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: rgb(240, 240, 160);
+    border: none;
+    justify-self: center;
+    align-self: center;
+}
 
-    }
+.cards button a {
+    font-family: "Edu SA Beginner", cursive;
+    text-decoration: none;
+    color: #c51605;
+    text-align: center;
+    font-size: 1.25rem;
+
+
+}
 
 
 /*------fin---tienda----*/
@@ -756,16 +837,15 @@ button {
     text-align: center;
     border-radius: 1rem;
     background-color: rgba(173, 173, 46, 0.753);
-    border:chocolate
-    
+    border: chocolate
 }
 
 button a {
-font-family: "Edu SA Beginner", cursive;
-text-decoration: none;
-color: #c51605;
-text-align: center;
-font-size:4rem;
+    font-family: "Edu SA Beginner", cursive;
+    text-decoration: none;
+    color: #c51605;
+    text-align: center;
+    font-size: 4rem;
 }
 
 /*-----fin----sale--*/
@@ -775,9 +855,9 @@ flex en main y footer*/
 
 
 /*-----catalogo----*/
-.catalogo{
+.catalogo {
     width: 100%;
-    height:40rem;
+    height: 40rem;
 }
 
 .catalogo button {
@@ -785,24 +865,15 @@ flex en main y footer*/
     text-align: center;
     border-radius: 1rem;
     background-color: rgba(173, 173, 46, 0.753);
-    border:chocolate
-    
+    border: chocolate
 }
 
 .catalogo button a {
-font-family: "Edu SA Beginner", cursive;
-text-decoration: none;
-color: #c51605;
-text-align: center;
-font-size:1.5rem;
+    font-family: "Edu SA Beginner", cursive;
+    text-decoration: none;
+    color: #c51605;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 /*----*/
-
-
-
-
-
-
-
-
