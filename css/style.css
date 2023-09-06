@@ -16,6 +16,8 @@ font-family: 'Kotta One', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+        
 }
 
 body {
@@ -44,15 +46,19 @@ header {
 }
 
 .items {
-    justify-self: flex-end;
-    align-self: self-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.items ul{
+    display: flex;
+    justify-items: flex-start;
 }
 
 .items li {
 
     list-style: none;
     text-align: left;
-    padding-right: 5rem;
+    padding-right: 1rem;
 }
 
 .items ul li a {
@@ -748,12 +754,11 @@ form fieldset label {
 .grid-sale {
     display: grid;
     width: 100%;
-    height: 32rem;
+    height: 33rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-area: "sale sale sale"
-        "boton1. boton3"
-        "boton2 . boton4";
+    justify-content: space-around;
+    align-content: space-between;
     background-image: url("../assets/img/fondos/background-sale.jpg");
     background-repeat: no-repeat;
     background-position: 40%;
@@ -770,7 +775,8 @@ form fieldset label {
     align-self: center;
 }
 
-.sale h1 {
+.sale h1 { 
+    display:grid;
     color: rgb(80, 74, 6);
     text-align: center;
     font-family: "Kotta One", serif;
@@ -779,6 +785,7 @@ form fieldset label {
 }
 
 .boton1 {
+    display:grid;
     grid-area: boton1;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -791,6 +798,7 @@ form fieldset label {
 }
 
 .boton2 {
+    display:grid;
     grid-area: boton2;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -805,6 +813,7 @@ form fieldset label {
 }
 
 .boton3 {
+    display:grid; 
     grid-area: boton3;
     grid-column-start: 3;
     grid-column-end: 4;
@@ -819,6 +828,7 @@ form fieldset label {
 }
 
 .boton4 {
+    display:grid;
     grid-area: boton4;
     grid-column-start: 3;
     grid-column-end: 4;
