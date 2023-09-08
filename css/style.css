@@ -17,7 +17,7 @@ font-family: 'Kotta One', serif;
     padding: 0;
     box-sizing: border-box;
     
-        
+    
 }
 
 body {
@@ -28,6 +28,7 @@ body {
 
 /*----header-------------*/
 header {
+
     display: flex;
     background-color: rgba(206, 206, 90, 0.74);
 
@@ -48,7 +49,8 @@ header {
 .items {
     justify-content: flex-start;
     align-content: flex-start;
-}
+} 
+
 .items ul{
     display: flex;
     justify-items: flex-start;
@@ -66,7 +68,7 @@ header {
     text-decoration: none;
     text-align: left;
     font-family: "Edu SA Beginner", cursive;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .navbar img {
@@ -275,27 +277,29 @@ h2 {
 }
 
 @media (max-width: 990px) {
+    .items ul li a{
+        font-size: 1rem;
+    }
 
     .direccion {
         width: 13.75rem;
         height: 5rem;
         justify-content: center;
-
     }
-
+    
     .direccion p {
-
         font-size: .75rem;
         justify-self: flex-end;
         align-self: self-start;
     }
-
+    
     .redes ul {
         align-items: start;
     }
 
-    .redes il {
-        align-items: flex-start;
+    .redes li {
+        align-items: flex-start; 
+        font: size .75rem;
     }
 
     .redes ul img {
@@ -303,14 +307,7 @@ h2 {
         height: fit-content;
         justify-content: center;
         align-content: center;
-    }
-
-    .redes li {
-        font: size .75rem;
-    }
-
-}
-
+    } }
 @media (max-width: 768px) {
 
     footer {
@@ -377,7 +374,7 @@ h2 {
         align-items: flex-end;
     }
 
-    .redes il {
+    .redes li {
         align-items: flex-start;
     }
 
@@ -401,132 +398,97 @@ h2 {
     }
 }
 
-@media(max-width: 560) {
-
-    .navbar {
-        max-width: 35rem;
+@media(max-width: 480px ){
+    
+    .navbar{
+        display: flex;
+        width:100%;
+        padding-right: 6rem;
+        
+        
     }
-
     .items {
-        width: 18.75rem;
-        padding-left: 3rem;
+        display:flex;
+        flex-wrap: wrap;
+        width: 7rem;
+        height: 7.5rem;
+        justify-content:flex-start;
+        align-content: flex-start;
+        align-items:flex-start;
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+        
     }
-
-    .navbar img {
-
-        width: 6.25rem;
+    .items ul{
+        display: flex; 
+        flex-direction: column;
+        width: auto ;
+        height:6.5rem; 
+        
     }
-
-    .direccion {
+    .items li{
+        padding-right: 0px;
+        
+    }
+    .navbar img{
+        width: 8rem;
+        height:7rem;
+        padding-right: .25rem;
+        padding-left: 1rem;
+        }
+    footer{
+        width:100%;
+        height: 25rem;
+        justify-content: center;
+        align-items: center;
+    } 
+    .direccion p {
         display: none;
     }
-
     .tarjetas img {
         display: none;
     }
+    
+    }
 
-}
-
-@media(max-width: 480) {
+@media (max-width:320px) { 
     .navbar {
         display: flex;
-        width: 30rem;
-
-    }
-
-    .items {
-        display: flex;
-        width: 18.75rem;
-        height: 6.5rem;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        padding-left: 3rem;
-
-    }
-
-    .items ul {
-        display: flex;
-        width: 15.625rem;
-        height: 6.5rem;
-
-    }
-
-    .items li {
-        display: flex;
-        padding-right: 0.25rem;
-    }
-
-    .items li a {
-        font-size: 12px;
-    }
-
-    .navbar img {
-        width: 6.25rem;
-        height: 6.5rem;
-        padding: 0%;
-    }
-
-    .sectionIndexSecundaria {
-        width: 100%;
-        height: 18.75rem;
-    }
-
-    .sectionIndexSecundaria video {
-        width:100%;
-        height: 15rem;
-        padding: .25rem;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100px;
-    }
-    .redes ul {
-        height: fit-content;
-        align-items: flex-end;
-        flex-direction: column;
-    }
-
-    .redes ul {
-        gap: .25rem;
-
-    }
-
-}
-
-@media (max-width:320px) {
-    header {
-        display: flex;
-        flex-direction: column;
         width: 100%;
         height: 120px;
-        justify-content: center;
+        justify-content:center;
         }
 
-    .items ul {
-        display: inline;
-        flex-direction: row;
-        height: 40px;
-        width: 100px;
-        padding-right: 0%;
+    .items {
+        justify-content: flex-start;
+        align-content: flex-start;
+        justify-items: center;
+        align-items: center;
+        padding-left: 0.25rem;
+        padding-right: 1rem;
     }
-
+    .items ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        padding-right: 0%;
+        padding-left: 0%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
     .items li {
         text-align: center;
     }
-
     .items ul li a {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .navbar img {
-        height: 80px;
-        width: 80px;
-        padding-right: 0%;
-        padding-left: 0%;
+        height:auto;
+        width: auto;
+        padding-right: 1rem;
+        
     }
 }
 
